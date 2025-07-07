@@ -46,7 +46,7 @@
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^22.0.2",
-    "@rollup/plugin-node-resolve": "^13.3.0",
+    "@rollup/plugin-node-resolve": "^16.0.0",
     "@rollup/plugin-typescript": "^8.3.4",
     "@types/bn.js": "^5.1.0",
     "@types/chai": "^4.3.0",
