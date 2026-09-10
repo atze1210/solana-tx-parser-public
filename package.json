@@ -1,7 +1,7 @@
 {
   "name": "@debridge-finance/solana-transaction-parser",
   "description": "Tool for parsing arbitrary Solana transactions with IDL/custom parsers",
-  "version": "3.4.1",
+  "version": "3.5.0",
   "author": "deBridge",
   "license": "LGPL-2.1",
   "homepage": "https://debridge.finance",
@@ -39,6 +39,7 @@
     "test:sysTx": "mocha -r ts-node/register -b -t 200000 ./tests/parseSystemTransaction.test.ts",
     "test:custom": "mocha -r ts-node/register -b -t 200000 ./tests/customParser.test.ts",
     "test:parseLogs": "mocha -r ts-node/register -b -t 200000 ./tests/parseLogs.test.ts",
+    "test:v1tx": "mocha -r ts-node/register -b -t 200000 ./tests/v1.tx.test.ts",
     "prettify": "prettier --write ./**/*.ts",
     "lint": "eslint --config .eslintrc \"./{src,tests}/**/*.{js,ts}\"",
     "lint:fix": "eslint --config .eslintrc \"./{src,tests}/**/*.{js,ts}\" --fix",
@@ -74,9 +75,9 @@
     "@coral-xyz/spl-token": "^0.31.1",
     "@noble/hashes": "^1.6.1",
     "@solana/codecs": "2.0.0",
-    "@solana/spl-token": "^0.4.9",
+    "@solana/spl-token": "^0.4.15",
     "@solana/spl-type-length-value": "0.2.0",
-    "@solana/web3.js": "^1.98.0",
+    "@solana/web3.js": "^1.99.0",
     "buffer": "6.0.3"
   },
   "peerDependencies": {
