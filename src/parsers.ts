@@ -280,7 +280,7 @@ export class SolanaParser {
 		flatten: boolean = false,
 		commitment: Finality = "confirmed",
 	): Promise<ParsedInstruction<Idl, string>[] | null> {
-		const transaction = await connection.getTransaction(txId, { commitment: commitment, maxSupportedTransactionVersion: 0 });
+		const transaction = await connection.getTransaction(txId, { commitment: commitment, maxSupportedTransactionVersion: 1 });
 		if (!transaction) return null;
 		if (flatten) {
 			const flattened = flattenTransactionResponse(transaction);
